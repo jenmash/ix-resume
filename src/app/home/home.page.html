@@ -1,14 +1,28 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Jen Mashaal
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    
   <div class="ion-padding">
-    The world is your oyster.
+      <ion-avatar>
+          <img src="https://imgur.com/UbR8IXF.jpg">
+        </ion-avatar>
+    <p><ion-icon name="star"></ion-icon>New to coding.</p> 
+    <p><ion-icon name="american-football"></ion-icon>Student at the University of Michigan</p>
+
     <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
   </div>
+  <ion-button (click)="presentAlert()">Alert!</ion-button>
+  <ion-button (click)="presentToastWithOptions()">Toast</ion-button>
+
+      <ion-item>
+        <ion-label color="primary">What's your name?</ion-label>
+        <ion-input placeholder="Input Name"></ion-input>
+      </ion-item>
+
 </ion-content>
